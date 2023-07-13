@@ -1,8 +1,8 @@
-// Check if the element exists
 const element = document.querySelector('h4.css-1xixvph.eh8fd905');
 const logoThere = document.querySelector('div.css-s5y73v.e1ee23lg0');
 
 if (!logoThere) {
+  console.log("there")
     // If the element exists, simulate a click on it
     element.click();
 
@@ -15,14 +15,11 @@ if (!logoThere) {
     }, 1000)
 
 } else {
+  console.log("not there")
     // If the element doesn't exist, refresh the page
     setTimeout( ()=> {
 
-        location.reload();
+        window.location.reload();
     }, 5000)
 
 }
-
-
-
-
