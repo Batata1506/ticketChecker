@@ -1,3 +1,6 @@
+// Check if the element exists
+
+setTimeout(() => {
 const element = document.querySelector('h4.css-1xixvph.eh8fd905');
 const logoThere = document.querySelector('div.css-s5y73v.e1ee23lg0');
 
@@ -23,3 +26,5 @@ if (!logoThere) {
     }, 5000)
 
 }
+
+}, 1000)
